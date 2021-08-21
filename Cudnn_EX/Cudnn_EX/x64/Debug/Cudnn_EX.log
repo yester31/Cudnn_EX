@@ -1,0 +1,13 @@
+﻿  Skipping CUDA source file example.cu (excluded from build).
+  model_ex.cpp
+c:\users\yeste\desktop\cudnn_ex\cudnn_ex\cudnn_ex\model_ex.cpp(14): warning C4244: '=': 'int'에서 '_Ty'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              _Ty=float
+          ]
+c:\users\yeste\desktop\cudnn_ex\cudnn_ex\cudnn_ex\model_ex.cpp(23): warning C4244: '=': 'int'에서 '_Ty'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              _Ty=float
+          ]
+  Cudnn_EX.vcxproj -> C:\Users\yeste\Desktop\Cudnn_EX\Cudnn_EX\x64\Debug\Cudnn_EX.exe
