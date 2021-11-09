@@ -9,4 +9,5 @@
 주어진 조건에서 가능한 Convolution 연산 수행    
 단순히 하나의 Convolution 연산을 1000번 반복 후 수행 시간 비교
 
-## Cudnn api로 모델 예제 (준비중) 
+## Cudnn api로 모델 예제 (준비중)
+resnet18
