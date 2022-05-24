@@ -1,13 +1,35 @@
 # Cudnn_EX
-## 작업 환경
+
+
+## Environment
 - Windows 10
 - CUDA 11.1
 - TensorRT 8.0.1.6
 - Cudnn 8.2.1
+***
+## Cudnn Convolution APIs
+- Cudnn Convolution Algorithm execution time Comparison (1000 iteration)   
+- input [1,3,224,224] weight [32,3,3,3] bias [32]   
 
-## Cudnn Convolution 연산 예제 
-주어진 조건에서 가능한 Convolution 연산 수행    
-단순히 하나의 Convolution 연산을 1000번 반복 후 수행 시간 비교
+    - [IMPLICIT_GEMM]   
+    avg_dur_time= 1.612[msec]
+    
+    - [IMPLICIT_PRECOMP_GEMM]   
+    avg_dur_time= 0.110 [msec]
+    
+    - [GEMM]   
+    avg_dur_time= 0.135 [msec]
+    
+    - [FFT]   
+    avg_dur_time= 1.655 [msec]
+    
+    - [FFT_TILING]   
+    avg_dur_time= 1.305 [msec]
+    
+    - [WINOGRAD]   
+    avg_dur_time= 0.105 [msec]
+    
+    - [WINOGRAD_NONFUSED]   
+    avg_dur_time= 2.868 [msec]
 
-## Cudnn api로 모델 예제 (준비중)
-resnet18
+***
