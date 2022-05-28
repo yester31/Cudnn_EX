@@ -11,25 +11,29 @@
 - Cudnn Convolution Algorithm execution time Comparison (1000 iteration)   
 - input [1,3,224,224] weight [32,3,3,3] bias [32]   
 
-    - [IMPLICIT_GEMM]   
-    avg_dur_time= 1.612[msec]
-    
-    - [IMPLICIT_PRECOMP_GEMM]   
-    avg_dur_time= 0.110 [msec]
-    
-    - [GEMM]   
-    avg_dur_time= 0.135 [msec]
-    
-    - [FFT]   
-    avg_dur_time= 1.655 [msec]
-    
-    - [FFT_TILING]   
-    avg_dur_time= 1.305 [msec]
-    
-    - [WINOGRAD]   
-    avg_dur_time= 0.105 [msec]
-    
-    - [WINOGRAD_NONFUSED]   
-    avg_dur_time= 2.868 [msec]
+<table border="0"  width="100%">
+	<tbody align="center">
+		<tr>
+			<td></td>
+			<td><strong>IMPLICIT_GEMM</strong></td>
+            <td><strong>IMPLICIT_PRECOMP_GEMM</strong></td>
+            <td><strong>GEMM</strong></td>
+            <td><strong>FFT</strong></td>
+            <td><strong>FFT_TILING</strong></td>
+            <td><strong>WINOGRAD</strong></td>
+            <td><strong>WINOGRAD_NONFUSED</strong></td>
+		</tr>
+		<tr>
+			<td>Avg Duration time [ms]</td>
+			<td>1.612 ms</td>
+			<td>0.110 ms </td>
+			<td>0.135 ms</td>
+			<td>1.655 ms</td>
+			<td>1.305 ms</td>
+			<td>0.105 ms</td>
+			<td>2.868 ms</td>
+		</tr>
+	</tbody>
+</table>
 
 ***
